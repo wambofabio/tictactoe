@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    //link to css file
+
     <link rel="stylesheet" href="style.css" />
     <title>TicTacToe</title>
   </head>
   <body>
     <!-- Your HTML content here -->
+    <div id="board" class="board">
+      <!-- The individual cells of the board will be appended here with JS?-->
+    </div>
+    <div id="player-names">
+      <input type="text" id="player1-name" placeholder="Player 1 name" />
+      <input type="text" id="player2-name" placeholder="Player 2 name" />
+      <button onclick="Game.initPlayers()">Start Game</button>
+    </div>
 
     <!-- Linking the JavaScript file -->
     <script src="script.js"></script>
